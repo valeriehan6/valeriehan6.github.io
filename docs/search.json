@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Score-based likelihood ratios (SLRs) are a statistical method used to quantify the weight of evidence and have been used in many forensic disciplines, including footwear analysis. Footwear examiners are often asked to explore whether a particular shoe might have made a print found at a crime scene. At present, examiners rely on subjective assessment because dependable, quantitative methods to quantify the similarity between two outsole images are not yet available and tested. Park and Carriquiry (2020) proposed a method based on the idea of a maximal clique to find the best alignment for a pair of shoeprint images. Once two images are aligned, variables can be measured that may help quantify the closeness between the aligned images. Three variables are considered: maximal clique size, percent of overlapping features in the two images, and median Euclidean distance between overlapping features. The scores on their own are difficult to interpret, so they must then be interpreted relative to two different reference sets of scores: scores that are obtained using pairs of images from the same (matching) outsoles and pairs of images of outsoles that are known to be non-matching. Matching scores are computed from features of a pair of shoeprints known to come from the same shoe. Non-matching scores are computed from two shoeprints known to come from two different shoes. \nComputing the SLR requires estimating the joint distribution of the three variables. Since the distribution is not a recognizable parametric distribution, kernel density estimation (KDE) is used. However, the three variables are computed from paired outsoles, and since the same outsoles appear in different pairs, the observations are dependent. This introduces a statistical problem, because the KDE approach for estimating the joint distribution of the three features assumes that the observations in the dataset are independent. \nThe three variables (or features) may be used to compute an SLR. They can also be combined into a univariate score using a method such as a random forest. Univariate scores are desirable because it is typically easier to model a single variable than to estimate a joint distribution for multiple variables. The present research explores the robustness to the lack of independence of observations of different approaches for computing SLRs. Seven different approaches are explored: three that rely on the three-dimensional distributions and four that rely on the distribution of the univariate similarity score. Each method addresses the dependence of the observations differently.\nThe performance of the different SLRs is assessed by computing their accuracy, true positive rate, true negative rate, and rate of weak/misleading evidence. This present research will address the importance of non-independence of observations with respect to different performance metrics and identify whether there is one approach that appears to do better than others."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "valeriehan6.github.io",
+    "section": "",
+    "text": "Department of Statistics at Iowa State University\nGithub: valeriehan6"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Site is WIP."
+  }
+]
